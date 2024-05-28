@@ -10,6 +10,8 @@ Information
 ------------
 [BigInv](https://www.spigotmc.org/resources/biginv-1-13-x-1-19-x.69257/) is a Minecraft plugin developed by [Alex_qp](https://www.spigotmc.org/resources/authors/alex_qp.306806/). Its first release was on Jul 30, 2019 and was constantly improved and updated since then. On May 28, 2024 the source code got published under the GNU General Public License v3.
 
+Releases will only be marked on Spigot.
+
 Source
 ------
 Source code is currently available on [GitHub](https://github.com/Alex39099/BigInv). Please respect the license.
