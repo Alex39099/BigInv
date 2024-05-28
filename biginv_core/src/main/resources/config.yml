@@ -1,0 +1,41 @@
+# BigInv by Alex_qp
+# This plugin allows players to have bigger inventories.
+# Please leave a review after a while to help me improve my plugins!
+
+# To open your bigger inventory without the command, click the result slot in your player-inventory while not crafting.
+
+# Set to true if BigInvs should get saved if closed. This prevents data loss if the server crashes.
+#   Please note: this has no effect if the server shuts down as usual.
+save_on_inventory_close: true
+
+# Set the title of a BigInv inventory. Use %player% for the player's name.
+inventory_title: "BigInv (%player%)"
+
+# All messages support common Bukkit color codes.
+messages:
+  # Set the command's main prefix. Use "default" for the default command prefix.
+  cmd_prefix: "default"
+  backup_needed_login: "&4Your old BigInv was to big to fit all items in the new one. Use /biginv backup to restore all left items in your player inventory."
+  credits:
+    credit: "Use /biginv help for all available commands."
+    mechanic_explanation: "To access your bigger inventory, click on your crafting result while not crafting."
+  help:
+    header: "List of all available commands:"
+    see: "Opens a player's bigger inventory."
+    backup: "Restores a backup into the target's inventory."
+  no_permission: "&4You do not have permission"
+  wrongCmdUsage:
+    prefix: "&CUsage:"
+    no_player: "&CThere is no player with this name online."
+  seeCmd:
+    no_data: "&6There is no biginv available."
+  backupCmd:
+    success: "&2Backup restoring was successful."
+    partial_success: "&6Added items to inventory, but there are still items left in the backup."
+    no_data: "&6There is no backup available."
+  logoutClose: "&6BigInv has been closed because the owner left the server."
+
+# Options regarding the updateChecker (by mfnalex (https://github.com/JEFF-Media-GbR/Spigot-UpdateChecker))
+updatechecker:
+  enable: true
+  notify_op_on_login: true

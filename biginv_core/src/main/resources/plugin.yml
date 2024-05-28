@@ -1,0 +1,67 @@
+main: com.github.alexqp.biginv.main.BigInv
+name: ${project.parent.name}
+version: ${project.parent.version}
+author: alexqp
+description: ${project.parent.description}
+api-version: "1.16"
+website: ${project.parent.url}
+
+commands:
+  biginv:
+    description: All commands.
+
+permissions:
+  biginv.*:
+    description: Grants all permissions.
+    default: false
+    children:
+      biginv.see: true
+      biginv.see.other: true
+      biginv.change: true
+      biginv.change.other: true
+      biginv.backup: true
+      biginv.backup.other: true
+      biginv.backup.login: true
+      biginv.size.*: true
+      biginv.keepinventory: true
+      biginv.updatechecker: true
+
+  biginv.see:
+    description: Gives access to mechanic/command to open any biginv.
+    default: op
+
+  biginv.see.other:
+    description: Gives access to mechanic/command to see other players' biginvs.
+    default: op
+
+  biginv.change:
+    description: Allows to change any biginv.
+    default: op
+
+  biginv.change.other:
+    description: Allows to change other players' biginvs.
+    default: op
+
+  biginv.backup:
+    description: Allows to restore any backuped biginv.
+    default: op
+
+  biginv.backup.other:
+    description: Allows to restore other players' biginvs.
+    default: op
+
+  biginv.backup.login:
+    description: Backedup items will be restored on login if possible.
+    default: op
+
+  biginv.size.*:
+    description: Grants a biginv size of 6 rows (double chest).
+    default: op
+
+  biginv.keepinventory:
+    description: Stops items from dropping on death.
+    default: false
+
+  biginv.updatechecker:
+    description: Get notified on login if a new update of the plugin exists.
+    default: false
