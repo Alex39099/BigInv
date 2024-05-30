@@ -24,7 +24,7 @@
 
     <groupId>me.alexqp</groupId>
     <artifactId>biginv</artifactId>
-    <version>1.11.0</version>
+    <version>1.11.1</version>
     <modules>
         <module>biginv_core</module>
         <module>biginv_dist</module>
@@ -35,9 +35,9 @@
     <packaging>pom</packaging>
     <properties>
         <buildNo/>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
     <repositories>
