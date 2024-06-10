@@ -41,7 +41,7 @@ import java.util.logging.Level;
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
 public class BigInv extends JavaPlugin implements Debugable {
 
-    private static final String defaultInternalsVersion = "1_20_R3";
+    private static final String defaultInternalsVersion = "Internals_v1_20_6";
 
     @Override
     public boolean getDebug() {
@@ -58,7 +58,8 @@ public class BigInv extends JavaPlugin implements Debugable {
     static {
         try {
             String packageName = BigInv.class.getPackage().getName();
-            String internalsName = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
+            String minecraftVersion = Bukkit.getServer().getBukkitVersion().split("-")[0];
+            String internalsName = getInternalsName(minecraftVersion);
             if (defaultInternalsVersion.equals(internalsName)) {
                 Bukkit.getLogger().log(Level.INFO, BigInv.class.getSimpleName() + " is using the latest implementation (last tested for " + defaultInternalsVersion + ").");
                 internals = new InternalsProvider();
@@ -75,7 +76,7 @@ public class BigInv extends JavaPlugin implements Debugable {
 
     /**
      *
-     * @param internalsName the current NMS version used by the server
+     * @param internalsName the current internals version used by the server
      * @return the internals version name for the given NMS version. Returns defaultInternalsVersion for newer versions by default.
      */
     private static String getInternalsName(String internalsName) {
