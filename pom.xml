@@ -24,7 +24,7 @@
 
     <groupId>me.alexqp</groupId>
     <artifactId>biginv</artifactId>
-    <version>1.11.1</version>
+    <version>1.11.2</version>
     <modules>
         <module>biginv_core</module>
         <module>biginv_dist</module>
